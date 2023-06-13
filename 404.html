@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript">
+			(() => {
+
+				const param = 'mfs';
+				const url = new URL(window.location);
+
+				let params = new URLSearchParams(url.search);
+				let storage = params.get(param);
+
+				url.searchParams.delete(param);
+
+				switch (storage) {
+					case 'storj':
+						url.hostname = 'link.storjshare.io';
+						break;
+					case 'r2':
+						url.hostname = '2796c5687ef8c36d330c1a863036c57f.r2.cloudflarestorage.com';
+						break;
+					default:
+						return;
+				};
+
+				window.location.replace(url);
+
+			})();
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="noindex,nofollow">
+		<meta name="keywords" content="Error, 404">
+		<meta name="description" content="Majal Mirasol 404 error page. Not found.">
+		<meta name="author" content="Majal Mirasol">
+		<title>404 - Can't find it</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<link rel="icon" href="favicon.svg?v=1.0.0" sizes="any" type="image/svg+xml">
+		<style>
+			body, html { font-family: Segoe UI, Tahoma, Verdana, Arial, sans-serif; height: 98%; text-align: center; position: relative; }
+			input { display: inline-block; cursor: pointer; }
+			table { width: 100%; height: 100%; }
+			a:link { text-decoration: none; color: #0000EE; }
+			a:visited { text-decoration: none; color: #0000EE; }
+			a:hover { text-decoration: underline; color: #0000EE; }
+			#esc { position: relative; }
+			#esc:hover { color: blue; }
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr style="height: 64%">
+				<td>
+					<h1>Sorry, <span style="color:gray">I can't find</span> what you're looking for.</h1>
+					<p>Want to <a href="/">check</a> with Maj about it?</p>
+					<br /><input type="button" value="Contact Maj" id="esc" />
+					<script>jQuery($( "#esc" ).focus())</script>
+				</td>
+			</tr>
+			<tr style="height: 33%"><td></td></tr>
+		</table>
+		<script>
+			jQuery(function($) {
+				$( "#esc" ).mouseover(function() {
+				var dWidth = ($(window).width() - $( "#esc" ).width()),
+					dHeight = ($(window).height() - $( "#esc" ).height()),
+						nextX = Math.floor(Math.random() * dWidth) - (dWidth / 1.9),
+						nextY = Math.floor(Math.random() * dHeight) - (dHeight / 2.5);
+				$(this).animate({ left: nextX + 'px', top: nextY + 'px' });
+			});
+			}); 
+			jQuery(function($) {
+				$( "#esc" ).click(function() {
+				var dWidth = ($(window).width() - $( "#esc" ).width()),
+					dHeight = ($(window).height() - $( "#esc" ).height()),
+						nextX = Math.floor(Math.random() * dWidth) - (dWidth / 1.9),
+						nextY = Math.floor(Math.random() * dHeight) - (dHeight / 2.5);
+				$(this).animate({ left: nextX + 'px', top: nextY + 'px' });
+			 });
+			}); 
+		jQuery(function() {
+			$( "#esc" ).bind( "tap", tapHandler );
+			function tapHandler( event ){
+				var dWidth = ($(window).width() - $( "#esc" ).width()),
+					dHeight = ($(window).height() - $( "#esc" ).height()),
+						nextX = Math.floor(Math.random() * dWidth) - (dWidth / 1.9),
+						nextY = Math.floor(Math.random() * dHeight) - (dHeight / 2.5);
+				$(this).animate({ left: nextX + 'px', top: nextY + 'px' });
+			 }
+		});
+		jQuery(function() {
+			$( "#esc" ).bind( "swipe", swipeHandler );
+			function swipeHandler( event ){
+				var dWidth = ($(window).width() - $( "#esc" ).width()),
+					dHeight = ($(window).height() - $( "#esc" ).height()),
+						nextX = Math.floor(Math.random() * dWidth) - (dWidth / 1.9),
+						nextY = Math.floor(Math.random() * dHeight) - (dHeight / 2.5);
+				$(this).animate({ left: nextX + 'px', top: nextY + 'px' });
+			 }
+		});
+		jQuery(function() {
+			$( "#esc" ).bind( "taphold", tapholdHandler );
+			function tapholdHandler( event ){
+				var dWidth = ($(window).width() - $( "#esc" ).width()),
+					dHeight = ($(window).height() - $( "#esc" ).height()),
+						nextX = Math.floor(Math.random() * dWidth) - (dWidth / 1.9),
+						nextY = Math.floor(Math.random() * dHeight) - (dHeight / 2.5);
+				$(this).animate({ left: nextX + 'px', top: nextY + 'px' });
+			 }
+		});
+		</script>
+	</body>
+</html>
+
+<!--
+<contact>https://www.majlovesreg.one/</contact>
+-->
